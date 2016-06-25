@@ -29,8 +29,8 @@ Other variables have the following format: [time/frequency][type][Mean/Std][X/Y/
 
 For each combination subject x activity, the results table contains the average of the following variables:
 
-| Variable Name
-| timeBodyAccMeanX
+| Variable Name |
+| timeBodyAccMeanX |
 | timeBodyAccMeanY
 | timeBodyAccMeanZ
 | timeGravityAccMeanX                 
