@@ -2,7 +2,8 @@
 ## data set with the average of each variable for each activity and each subject 
 
 ## Parameters 
-## dir: directory containg Samsung data. Default value is the current working directory.
+## dir: directory or URL containg Samsung data. Default value is the current working directory.
+## If dir is a URL, It should point to a compressed zip file.
 
 run_analysis <- function(dir = getwd()) {
     
@@ -10,6 +11,7 @@ run_analysis <- function(dir = getwd()) {
     require(plyr)
     require(dplyr)
     require(assertthat)
+    require(utils)
     
     ## INTERNAL HELPER FUNCTIONS START
     
@@ -78,6 +80,16 @@ run_analysis <- function(dir = getwd()) {
     }
     
     ## INTERNAL HELPER FUNCTIONS END
+    
+    ## If dir parameter is a URL, download and unzip the data set
+    if(length(grep("?(f|ht)tp(s?)://(.*)[.][a-z]+", dir)) != 0) {
+        fileName <- tempfile(fileext = ".zip")
+        download.file(dir, fileName, method = "curl")
+        unzip(fileName, exdir = ".")
+        file.remove(fileName)
+        
+        dir <- "./UCI HAR Dataset"
+    }
     
     ## R.1 - Merge the training and the test sets to create one data set
     ## R.2 - Extract only the measurements on the mean and standard deviation for each measurement
