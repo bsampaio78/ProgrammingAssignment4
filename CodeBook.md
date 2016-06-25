@@ -29,11 +29,11 @@ Other variables have the following format: [time/frequency][type][Mean/Std][X/Y/
 
 For each combination subject x activity, the results table contains the average of the following variables:
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| Variable Name   |
+|----------|
+| timeBodyAccMeanX |
+| col 2 is |
+| col 3 is |
 
 | Variable Name |
 | timeBodyAccMeanX |
