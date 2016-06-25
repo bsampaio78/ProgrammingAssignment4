@@ -29,87 +29,88 @@ Other variables have the following format: [time/frequency][type][Mean/Std][X/Y/
 
 For each combination subject x activity, the results table contains the average of the following variables:
 
-timeBodyAccMeanX                    
-timeBodyAccMeanY
-timeBodyAccMeanZ
-timeGravityAccMeanX                 
-timeGravityAccMeanY
-timeGravityAccMeanZ
-timeBodyAccJerkMeanX                
-timeBodyAccJerkMeanY
-timeBodyAccJerkMeanZ
-timeBodyGyroMeanX                   
-timeBodyGyroMeanY
-timeBodyGyroMeanZ
-timeBodyGyroJerkMeanX               
-timeBodyGyroJerkMeanY
-timeBodyGyroJerkMeanZ
-timeBodyAccMagMean                  
-timeGravityAccMagMean
-timeBodyAccJerkMagMean
-timeBodyGyroMagMean                 
-timeBodyGyroJerkMagMean
-frequencyBodyAccMeanX
-frequencyBodyAccMeanY               
-frequencyBodyAccMeanZ
-frequencyBodyAccJerkMeanX
-frequencyBodyAccJerkMeanY           
-frequencyBodyAccJerkMeanZ
-frequencyBodyGyroMeanX
-frequencyBodyGyroMeanY              
-frequencyBodyGyroMeanZ
-frequencyBodyAccMagMean
-frequencyBodyBodyAccJerkMagMean     
-frequencyBodyBodyGyroMagMean
-frequencyBodyBodyGyroJerkMagMean
-timeBodyAccStdX                     
-timeBodyAccStdY
-timeBodyAccStdZ
-timeGravityAccStdX                  
-timeGravityAccStdY
-timeGravityAccStdZ
-timeBodyAccJerkStdX                 
-timeBodyAccJerkStdY
-timeBodyAccJerkStdZ
-timeBodyGyroStdX                    
-timeBodyGyroStdY
-timeBodyGyroStdZ
-timeBodyGyroJerkStdX                
-timeBodyGyroJerkStdY
-timeBodyGyroJerkStdZ
-timeBodyAccMagStd                   
-timeGravityAccMagStd
-timeBodyAccJerkMagStd
-timeBodyGyroMagStd                  
-timeBodyGyroJerkMagStd
-frequencyBodyAccStdX
-frequencyBodyAccStdY                
-frequencyBodyAccStdZ
-frequencyBodyAccJerkStdX
-frequencyBodyAccJerkStdY            
-frequencyBodyAccJerkStdZ
-frequencyBodyGyroStdX
-frequencyBodyGyroStdY               
-frequencyBodyGyroStdZ
-frequencyBodyAccMagStd
-frequencyBodyBodyAccJerkMagStd      
-frequencyBodyBodyGyroMagStd
-frequencyBodyBodyGyroJerkMagStd
-frequencyBodyAccMeanFreqX           
-frequencyBodyAccMeanFreqY
-frequencyBodyAccMeanFreqZ
-frequencyBodyAccJerkMeanFreqX       
-frequencyBodyAccJerkMeanFreqY
-frequencyBodyAccJerkMeanFreqZ
-frequencyBodyGyroMeanFreqX          
-frequencyBodyGyroMeanFreqY
-frequencyBodyGyroMeanFreqZ
-frequencyBodyAccMagMeanFreq         
-frequencyBodyBodyAccJerkMagMeanFreq
-frequencyBodyBodyGyroMagMeanFreq
-frequencyBodyBodyGyroJerkMagMeanFreq
+| Variable Name
+| timeBodyAccMeanX
+| timeBodyAccMeanY
+| timeBodyAccMeanZ
+| timeGravityAccMeanX                 
+| timeGravityAccMeanY
+| timeGravityAccMeanZ
+| timeBodyAccJerkMeanX                
+| timeBodyAccJerkMeanY
+| timeBodyAccJerkMeanZ
+| timeBodyGyroMeanX                   
+| timeBodyGyroMeanY
+| timeBodyGyroMeanZ
+| timeBodyGyroJerkMeanX               
+| timeBodyGyroJerkMeanY
+| timeBodyGyroJerkMeanZ
+| timeBodyAccMagMean                  
+| timeGravityAccMagMean
+| timeBodyAccJerkMagMean
+| timeBodyGyroMagMean                 
+| timeBodyGyroJerkMagMean
+| frequencyBodyAccMeanX
+| frequencyBodyAccMeanY               
+| frequencyBodyAccMeanZ
+| frequencyBodyAccJerkMeanX
+| frequencyBodyAccJerkMeanY           
+| frequencyBodyAccJerkMeanZ
+| frequencyBodyGyroMeanX
+| frequencyBodyGyroMeanY              
+| frequencyBodyGyroMeanZ
+| frequencyBodyAccMagMean
+| frequencyBodyBodyAccJerkMagMean     
+| frequencyBodyBodyGyroMagMean
+| frequencyBodyBodyGyroJerkMagMean
+| timeBodyAccStdX                     
+| timeBodyAccStdY
+| timeBodyAccStdZ
+| timeGravityAccStdX                  
+| timeGravityAccStdY
+| timeGravityAccStdZ
+| timeBodyAccJerkStdX                 
+| timeBodyAccJerkStdY
+| timeBodyAccJerkStdZ
+| timeBodyGyroStdX                    
+| timeBodyGyroStdY
+| timeBodyGyroStdZ
+| timeBodyGyroJerkStdX                
+| timeBodyGyroJerkStdY
+| timeBodyGyroJerkStdZ
+| timeBodyAccMagStd                   
+| timeGravityAccMagStd
+| timeBodyAccJerkMagStd
+| timeBodyGyroMagStd                  
+| timeBodyGyroJerkMagStd
+| frequencyBodyAccStdX
+| frequencyBodyAccStdY                
+| frequencyBodyAccStdZ
+| frequencyBodyAccJerkStdX
+| frequencyBodyAccJerkStdY            
+| frequencyBodyAccJerkStdZ
+| frequencyBodyGyroStdX
+| frequencyBodyGyroStdY               
+| frequencyBodyGyroStdZ
+| frequencyBodyAccMagStd
+| frequencyBodyBodyAccJerkMagStd      
+| frequencyBodyBodyGyroMagStd
+| frequencyBodyBodyGyroJerkMagStd
+| frequencyBodyAccMeanFreqX           
+| frequencyBodyAccMeanFreqY
+| frequencyBodyAccMeanFreqZ
+| frequencyBodyAccJerkMeanFreqX       
+| frequencyBodyAccJerkMeanFreqY
+| frequencyBodyAccJerkMeanFreqZ
+| frequencyBodyGyroMeanFreqX          
+| frequencyBodyGyroMeanFreqY
+| frequencyBodyGyroMeanFreqZ
+| frequencyBodyAccMagMeanFreq         
+| frequencyBodyBodyAccJerkMagMeanFreq
+| frequencyBodyBodyGyroMagMeanFreq
+| frequencyBodyBodyGyroJerkMagMeanFreq
 
-### About the Raw Data [1]
+### About Raw Data [1]
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
