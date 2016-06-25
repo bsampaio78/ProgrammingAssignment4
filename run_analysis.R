@@ -111,5 +111,15 @@ run_analysis <- function(dir = getwd()) {
     ## Here we undo that using the desired  column names
     colnames(result) <- colnames(dataSet)
     
+    ## Remove raw data
+    if(dir.exists("./UCI HAR Dataset")) {
+        unlink("./UCI HAR Dataset", recursive = TRUE)
+    }
+    
     result
 }
+
+## Run the script
+
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+write.table(run_analysis(url), "results.txt", row.names = FALSE)
