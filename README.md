@@ -22,7 +22,8 @@ The contained information is intended to be complete and self-explanatory for ea
 
 ### Running the Analysis Script
 
-It is recommended to use the project root directory as working directory. The script can then be loaded with the following command - source('run_analysis.R')
+It is recommended to use the project root directory as working directory. The script can then be loaded with the following command:
+> source('run_analysis.R')
 
 The script can be run in three different ways:
 
